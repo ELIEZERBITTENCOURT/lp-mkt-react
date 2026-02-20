@@ -4,14 +4,6 @@
 
 ---
 
-
-## 📸 Preview
-
-<p align="center">
-  <img src="./assets/preview.png" width="900" />
-</p>
-
-
 ## Visão Geral
 
 Landing page single-page para serviço de consultoria de desenvolvimento de software. Construída em React com CSS puro, focada em performance, elegância visual e conversão.
