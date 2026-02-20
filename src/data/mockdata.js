@@ -140,8 +140,8 @@ export const plans = [
 ];
 
 export const items = [
-    "React", "Node.js", "TypeScript", "PostgreSQL", "Redis",
-    "Kubernetes", "AWS", "GraphQL", "Next.js", "Rust",
-    "React", "Node.js", "TypeScript", "PostgreSQL", "Redis",
-    "Kubernetes", "AWS", "GraphQL", "Next.js", "Rust",
-  ];
+  "React", "Node.js", "TypeScript", "PostgreSQL", "Redis",
+  "Kubernetes", "AWS", "GraphQL", "Next.js", "Rust",
+  "React", "Node.js", "TypeScript", "PostgreSQL", "Redis",
+  "Kubernetes", "AWS", "GraphQL", "Next.js", "Rust",
+];

@@ -3,7 +3,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-copy">
-        © 2026 devcraft. Feito com precisão.
+        © 2026 devcraft. Feito com precisão. Design from Eliezer Bittencourt. Todos os direitos reservados.
       </div>
       <nav className="footer-links">
         <a href="#">LinkedIn</a>

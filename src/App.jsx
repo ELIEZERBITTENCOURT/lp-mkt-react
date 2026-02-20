@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
