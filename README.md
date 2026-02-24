@@ -12,7 +12,7 @@ Landing page single-page para serviço de consultoria de desenvolvimento de soft
 
 ---
 
-## ✦ Design System
+## Design System
 
 ### Paleta de Cores
 
@@ -93,22 +93,14 @@ Custom hook que usa `IntersectionObserver` para adicionar a classe `.visible` a 
 ```
 .
 └── App.jsx                 # Componente raiz       
-    ├── styles              # CSS completo
-    ├── data[]              # Dados dos serviços, plans, process, items e testimonials
-    ├── useReveal()         # Hook de animação por scroll
-    └── components          # Nav, Hero, Marquee, Services, Process,
+    ├── styles/              # CSS de cada compomente
+    ├── data/              # Dados dos serviços, plans, process, items e testimonials
+    ├── hook/         # Hook de animação por scroll
+    └── components/          # Nav, Hero, Marquee, Services, Process,
                             # Testimonials, Pricing, CTA, Footer
 ```
 
 ---
-
-## Como Usar
-
-### Pré-requisitos
-
-- Node.js 18+
-- React 18+
-- Projeto configurado com Vite
 
 ## Responsividade
 
@@ -126,32 +118,6 @@ font-size: clamp(1rem, 2vw, 1.2rem);   /* Hero subtitle */
 ```
 
 ---
-
-## Customização
-
-### Trocar cores do tema
-
-Edite as variáveis CSS no objeto `styles`:
-
-```css
-:root {
-  --accent: #4fffb0;   /* Cor primária — altere para sua brand */
-  --accent2: #4fa3ff;  /* Cor secundária */
-  --bg: #080c10;       /* Background */
-}
-```
-
-### Editar conteúdo das seções
-
-Todos os dados estão em data no arquivo `mockData.js`, facilitando a manutenção:
-
-```js
-const services = [ /* seus serviços */ ];
-const process   = [ /* suas etapas */ ];
-const testimonials = [ /* seus depoimentos */ ];
-const plans     = [ /* seus planos */ ];
-```
-
 ## SEO
 
 Adicionado as seguintes meta tags no `index.html` no projeto:
@@ -173,7 +139,7 @@ Adicionado as seguintes meta tags no `index.html` no projeto:
 
 ## Performance
 
-- **Zero dependências CSS** — nenhum Tailwind, bundle mínimo
+- **Zero dependências CSS externo** — bundle mínimo
 - **Fontes com `display=swap`** — sem bloqueio de renderização
 - **`IntersectionObserver`** — animações ativadas apenas quando visíveis, sem scroll listeners contínuos
 - **CSS `will-change` implícito** — transitions declaradas via `transition` property evitam repaints desnecessários
@@ -183,10 +149,14 @@ Adicionado as seguintes meta tags no `index.html` no projeto:
 
 ## Licença
 
-MIT — livre para uso pessoal e comercial.
+## License
 
+This project is licensed under the MIT License.
+
+© 2026 Eliezer Bittencourt
+All rights reserved.
 ---
 
 <div align="center">
-  <sub>Feito com precisão · devcraft © 2026</sub>
+  <sub> Design from Eliézer Bittencourt · devcraft © 2026</sub>
 </div>

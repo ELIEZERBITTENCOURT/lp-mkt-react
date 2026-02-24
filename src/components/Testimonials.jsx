@@ -1,4 +1,19 @@
+/*
+====================================================
+© 2026 Eliezer Bittencourt
+
+Projeto desenvolvido em React.js
+Todos os direitos reservados.
+
+Este código fonte, estilos e layout são propriedade
+intelectual do autor. A reprodução, modificação ou
+distribuição sem autorização é proibida.
+
+License: MIT
+====================================================
+*/
 import { testimonials } from "../data/mockdata";
+import '../styles/Testimonials.css';
 
 function Testimonials() {
   return (
