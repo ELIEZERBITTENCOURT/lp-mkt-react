@@ -1,0 +1,48 @@
+/*
+====================================================
+© 2026 Eliezer Bittencourt
+
+Projeto desenvolvido em React.js
+Todos os direitos reservados.
+
+Este código fonte, estilos e layout são propriedade
+intelectual do autor. A reprodução, modificação ou
+distribuição sem autorização é proibida.
+
+License: MIT
+====================================================
+*/
+.cta-section {
+  padding: 8rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 70% at 50% 50%, rgba(79, 255, 176, 0.07) 0%, transparent 60%);
+}
+
+.cta-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.cta-title {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.cta-sub {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 3rem;
+}

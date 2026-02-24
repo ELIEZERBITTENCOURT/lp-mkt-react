@@ -1,0 +1,66 @@
+/*
+====================================================
+© 2026 Eliezer Bittencourt
+
+Projeto desenvolvido em React.js
+Todos os direitos reservados.
+
+Este código fonte, estilos e layout são propriedade
+intelectual do autor. A reprodução, modificação ou
+distribuição sem autorização é proibida.
+
+License: MIT
+====================================================
+*/
+.process-section {
+  padding: 8rem 4rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(79, 255, 176, 0.02) 50%, transparent 100%);
+}
+
+.process-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.step {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.step::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent) 0%, transparent 100%);
+}
+
+.step-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  margin-bottom: 1.25rem;
+}
+
+.step-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.step-desc {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.76rem;
+  color: var(--muted);
+  line-height: 1.9;
+}

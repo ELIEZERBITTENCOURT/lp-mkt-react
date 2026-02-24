@@ -1,0 +1,44 @@
+/*
+====================================================
+© 2026 Eliezer Bittencourt
+
+Projeto desenvolvido em React.js
+Todos os direitos reservados.
+
+Este código fonte, estilos e layout são propriedade
+intelectual do autor. A reprodução, modificação ou
+distribuição sem autorização é proibida.
+
+License: MIT
+====================================================
+*/
+.marquee-wrap {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1.2rem 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 4rem;
+  white-space: nowrap;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-item {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.marquee-dot {
+  color: var(--accent);
+  font-size: 0.4rem;
+}

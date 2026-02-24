@@ -1,0 +1,82 @@
+/*
+====================================================
+© 2026 Eliezer Bittencourt
+
+Projeto desenvolvido em React.js
+Todos os direitos reservados.
+
+Este código fonte, estilos e layout são propriedade
+intelectual do autor. A reprodução, modificação ou
+distribuição sem autorização é proibida.
+
+License: MIT
+====================================================
+*/
+.service-card {
+  background: var(--surface);
+  padding: 2.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 100% 100% at var(--mx, 50%) var(--my, 50%),
+      rgba(79, 255, 176, 0.06) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.service-icon {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(79, 255, 176, 0.08);
+  border: 1px solid rgba(79, 255, 176, 0.15);
+  border-radius: 10px;
+}
+
+.service-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.service-desc {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.service-tag {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--accent2);
+  background: rgba(79, 163, 255, 0.08);
+  border: 1px solid rgba(79, 163, 255, 0.15);
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+}

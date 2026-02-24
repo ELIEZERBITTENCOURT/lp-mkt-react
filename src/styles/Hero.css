@@ -1,0 +1,156 @@
+/*
+====================================================
+© 2026 Eliezer Bittencourt
+
+Projeto desenvolvido em React.js
+Todos os direitos reservados.
+
+Este código fonte, estilos e layout são propriedade
+intelectual do autor. A reprodução, modificação ou
+distribuição sem autorização é proibida.
+
+License: MIT
+====================================================
+*/
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 2rem 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(79, 255, 176, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(79, 163, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  border: 1px solid rgba(79, 255, 176, 0.25);
+  background: rgba(79, 255, 176, 0.05);
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  margin-bottom: 2.5rem;
+  display: inline-block;
+  animation: fadeUp 0.6s ease both;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 8vw, 7.5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  max-width: 900px;
+  animation: fadeUp 0.6s 0.1s ease both;
+}
+
+.hero-title em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--muted);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-top: 2rem;
+  font-weight: 400;
+  animation: fadeUp 0.6s 0.2s ease both;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 3.5rem;
+  animation: fadeUp 0.6s 0.3s ease both;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #080c10;
+  border: none;
+  padding: 1rem 2.2rem;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: all 0.25s;
+  box-shadow: 0 0 30px rgba(79, 255, 176, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 50px rgba(79, 255, 176, 0.4);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--muted);
+  border: none;
+  padding: 1rem 1.5rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn-ghost:hover {
+  color: var(--text);
+}
+
+.hero-metrics {
+  display: flex;
+  gap: 4rem;
+  margin-top: 5rem;
+  animation: fadeUp 0.6s 0.4s ease both;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric-num {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  background: linear-gradient(135deg, var(--text) 0%, var(--muted) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.metric-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  margin-top: 0.25rem;
+}
